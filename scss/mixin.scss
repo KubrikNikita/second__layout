@@ -1,0 +1,56 @@
+@mixin font__regular_sm{
+    font: {
+        size: 14px;
+        style: normal;
+        family: 'Formular', sans-serif;
+    }
+}
+@mixin font__regular_base{
+    font: {
+        size: 16px;
+        style: normal;
+        family: 'Formular', sans-serif;
+    }
+}
+@mixin font__black_lg{
+    font: {
+        size: 18px;
+        weight:900;
+        family: 'Formular',sans-serif;
+    }
+}
+@mixin font__regular_xl{
+    font: {
+        size: 20px;
+        style: normal;
+        family: 'Formular',sans-serif;
+    }
+}
+@mixin font__lighter_2xl{
+    font: {
+        size: 24px;
+        style: lighter;
+        family: 'Formular',sans-serif;
+    }
+}
+@mixin font__black_2xl{
+    font: {
+        size: 24px;
+        weight: 900;
+        family: 'Formular',sans-serif;
+    }
+}
+@mixin font__bold_3xl{
+    font: {
+        size: 30px;
+        style: bold;
+        family: 'Formular',sans-serif;
+    }
+}
+@mixin font__black_4xl{
+    font: {
+        size: 36px;
+        weight: 900;
+        family: 'Formular',sans-serif;
+    }
+}
