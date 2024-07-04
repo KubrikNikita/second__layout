@@ -54,6 +54,13 @@
         family: 'Formular',sans-serif;
     }
 }
+@mixin font__black_3xl{
+    font: {
+        size: 30px;
+        weight: 900;
+        family: 'Formular',sans-serif;
+    }
+}
 @mixin font__black_4xl{
     font: {
         size: 36px;

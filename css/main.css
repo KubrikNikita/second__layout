@@ -147,6 +147,9 @@ header .header__line_bot .header__line_bot_1 .nav {
 }
 header .header__line_bot .header__line_bot_1 .nav .nav-item {
   text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Formular", sans-serif;
   color: #111827;
 }
 header .header__line_bot .header__line_bot_1 .nav .nav-item:hover {
@@ -175,7 +178,7 @@ header .header__line_bot .header__line_bot_2 .header__btn {
 .noproblem__block {
   max-width: 1536px;
   margin: 0 auto;
-  padding: 72px 12px;
+  padding: 72px 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -239,10 +242,10 @@ header .header__line_bot .header__line_bot_2 .header__btn {
   font-size: 16px;
   font-style: normal;
   font-family: "Formular", sans-serif;
-  width: 236px;
   height: 48px;
   border: 2px solid #111827;
   border-radius: 4px;
+  padding-left: 12px;
 }
 .noproblem__block .calculator .form .input-box_name input {
   font-size: 16px;
@@ -253,6 +256,7 @@ header .header__line_bot .header__line_bot_2 .header__btn {
   height: 48px;
   border: 2px solid #111827;
   border-radius: 4px;
+  padding-left: 12px;
 }
 .noproblem__block .calculator .form .input-box {
   padding-bottom: 24px;
@@ -275,4 +279,71 @@ header .header__line_bot .header__line_bot_2 .header__btn {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.advantages__wrapper {
+  max-width: 1536px;
+  margin: 0 auto;
+}
+.advantages__wrapper .advantages__title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+.advantages__wrapper .advantages__title h1 {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+}
+.advantages__wrapper .advantages__firstline {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages__wrapper .advantages__firstline .card__content {
+  display: flex;
+  padding: 24px;
+}
+.advantages__wrapper .advantages__firstline .card__content .card__text {
+  padding-top: 16px;
+  padding-left: 12px;
+  display: flex;
+  gap: 12px 0;
+  flex-direction: column;
+}
+.advantages__wrapper .advantages__firstline .card__content .card__text h1 {
+  font-size: 24px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+}
+.advantages__wrapper .advantages__firstline .card__content .card__text p1 {
+  font-size: 14px;
+  font-style: normal;
+  font-family: "Formular", sans-serif;
+  line-height: 20px;
+}
+.advantages__wrapper .advantages__secondline {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages__wrapper .advantages__secondline .card__content {
+  display: flex;
+  padding: 24px;
+}
+.advantages__wrapper .advantages__secondline .card__content .card__text {
+  padding-top: 16px;
+  padding-left: 12px;
+  display: flex;
+  gap: 12px 0;
+  flex-direction: column;
+}
+.advantages__wrapper .advantages__secondline .card__content .card__text h1 {
+  font-size: 24px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+}
+.advantages__wrapper .advantages__secondline .card__content .card__text p1 {
+  font-size: 14px;
+  font-style: normal;
+  font-family: "Formular", sans-serif;
+  line-height: 20px;
 }
