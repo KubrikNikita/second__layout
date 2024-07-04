@@ -12,6 +12,13 @@
         family: 'Formular', sans-serif;
     }
 }
+@mixin font__bold_base{
+    font: {
+        size: 16px;
+        weight: bold;
+        family: 'Formular', sans-serif;
+    }
+}
 @mixin font__black_lg{
     font: {
         size: 18px;
@@ -43,7 +50,7 @@
 @mixin font__bold_3xl{
     font: {
         size: 30px;
-        style: bold;
+        weight: bold;
         family: 'Formular',sans-serif;
     }
 }
