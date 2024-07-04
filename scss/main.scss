@@ -2,3 +2,97 @@
 @import 'mixin';
 @import 'variables';
 
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    background-color:  $background;
+    font-family: 'Formular',sans-serif;
+}
+header{
+    background-color: $white;
+    width: 100%;
+    .wrapper{
+    max-width: 1536px;
+    margin: 0 auto;
+    }
+    .header__line_top{
+        max-width: 1536px;
+        margin: 0 auto;
+        padding: 24px 0;
+        display: flex;
+        justify-content: space-between;
+        .header__line_top_1{
+            display: flex;
+            align-items: center;
+            h1{
+                font-family: 'Formular';
+                font-weight: 900;
+            }
+        }
+        .header__line_top_2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0 12px;
+            p{
+                @include font__regular_base;
+                text-align: right;
+                line-height: 20px;
+            }
+            .num{
+                @include font__black_4xl;
+                
+            }
+            p1{
+                @include font__lighter_2xl;
+            }
+            .num__wrapper{
+                flex-direction: column;
+            }
+        }
+    }
+    .header__line_bot{
+        padding: 24px 0;
+        display: flex;
+        justify-content: space-between;
+        .header__line_bot_1{
+            display: flex;
+            align-items: center;
+            .nav{
+                display: flex;
+                flex-direction: row;
+                gap: 0 24px;
+                .nav-item{
+                    text-decoration: none;
+                    color: $black;
+                &:hover{
+                    color: $purple;
+                    }
+                &:focus{
+                    color: $purple;
+                    border-bottom: 2px dashed $purple;
+                }
+                }
+            }
+        }
+        .header__line_bot_2{
+            display: flex;
+            .header__btn{
+                @include font__regular_base;
+                font-weight: bold;
+                color: $white;
+                background-color: $purple;
+                border: none;
+                border-radius: 4px;
+                padding: 10px 28px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+
+

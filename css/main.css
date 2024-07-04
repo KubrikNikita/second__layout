@@ -73,3 +73,100 @@
   src: url("/second__layout/fonts/formular-ultra-trial.otf");
   font-weight: 200;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  background-color: #E5E7EB;
+  font-family: "Formular", sans-serif;
+}
+
+header {
+  background-color: #F9FAFB;
+  width: 100%;
+}
+header .wrapper {
+  max-width: 1536px;
+  margin: 0 auto;
+}
+header .header__line_top {
+  max-width: 1536px;
+  margin: 0 auto;
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+}
+header .header__line_top .header__line_top_1 {
+  display: flex;
+  align-items: center;
+}
+header .header__line_top .header__line_top_1 h1 {
+  font-family: "Formular";
+  font-weight: 900;
+}
+header .header__line_top .header__line_top_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 12px;
+}
+header .header__line_top .header__line_top_2 p {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Formular", sans-serif;
+  text-align: right;
+  line-height: 20px;
+}
+header .header__line_top .header__line_top_2 .num {
+  font-size: 36px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+}
+header .header__line_top .header__line_top_2 p1 {
+  font-size: 24px;
+  font-style: lighter;
+  font-family: "Formular", sans-serif;
+}
+header .header__line_top .header__line_top_2 .num__wrapper {
+  flex-direction: column;
+}
+header .header__line_bot {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+}
+header .header__line_bot .header__line_bot_1 {
+  display: flex;
+  align-items: center;
+}
+header .header__line_bot .header__line_bot_1 .nav {
+  display: flex;
+  flex-direction: row;
+  gap: 0 24px;
+}
+header .header__line_bot .header__line_bot_1 .nav .nav-item {
+  text-decoration: none;
+  color: #111827;
+}
+header .header__line_bot .header__line_bot_1 .nav .nav-item:hover {
+  color: #8B5CF6;
+}
+header .header__line_bot .header__line_bot_1 .nav .nav-item:focus {
+  color: #8B5CF6;
+  border-bottom: 2px dashed #8B5CF6;
+}
+header .header__line_bot .header__line_bot_2 {
+  display: flex;
+}
+header .header__line_bot .header__line_bot_2 .header__btn {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Formular", sans-serif;
+  font-weight: bold;
+  color: #F9FAFB;
+  background-color: #8B5CF6;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 28px;
+  cursor: pointer;
+}
