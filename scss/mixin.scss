@@ -12,6 +12,13 @@
         family: 'Formular', sans-serif;
     }
 }
+@mixin font__black_base{
+    font: {
+        size: 16px;
+        weight: 900;
+        family: 'Formular', sans-serif;
+    }
+}
 @mixin font__bold_base{
     font: {
         size: 16px;

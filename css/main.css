@@ -347,3 +347,102 @@ header .header__line_bot .header__line_bot_2 .header__btn {
   font-family: "Formular", sans-serif;
   line-height: 20px;
 }
+
+.garantees__wrapper {
+  max-width: 1536px;
+  margin: 0 auto;
+  padding-top: 72px;
+}
+.garantees__wrapper .garantees__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 24px;
+}
+.garantees__wrapper .garantees__text h1 {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+}
+.garantees__wrapper .garantees__text p1 {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Formular", sans-serif;
+  text-align: center;
+}
+.garantees__wrapper .garantees__items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+.garantees__wrapper .garantees__items .garantees__item_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px 0;
+  margin-top: -12px;
+}
+.garantees__wrapper .garantees__items .garantees__item_1 p {
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+}
+.garantees__wrapper .garantees__items .garantees__item_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px 0;
+  margin-top: -12px;
+}
+.garantees__wrapper .garantees__items .garantees__item_2 p {
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+}
+.garantees__wrapper .garantees__items .garantees__item_3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px 0;
+}
+.garantees__wrapper .garantees__items .garantees__item_3 p {
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+  text-align: center;
+}
+.garantees__wrapper .garantees__items .garantees__item_4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px 0;
+}
+.garantees__wrapper .garantees__items .garantees__item_4 p {
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+  text-align: center;
+}
+.garantees__wrapper .btn__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 36px;
+}
+.garantees__wrapper .btn__container .garantees__btn {
+  background-color: #8B5CF6;
+  color: #F9FAFB;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+  padding: 16px 28px;
+  cursor: pointer;
+}

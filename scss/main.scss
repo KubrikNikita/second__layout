@@ -241,6 +241,90 @@ header{
         }
     }
 }
+.garantees__wrapper{
+    max-width: 1536px;
+    margin: 0 auto;
+    padding-top: 72px;
+    .garantees__text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 12px;
+        padding-bottom: 24px;
+        h1{
+            @include font__black_3xl;
+        }
+        p1{
+            @include font__regular_base;
+            text-align: center;
+        }
+    }
+    .garantees__items{
+        display: flex;
+        justify-content: space-between;
+        margin-top: auto;
+        .garantees__item_1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 4px 0;
+            margin-top: -12px;
+            p{
+                @include font__black_lg
+            }
+        }
+        .garantees__item_2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 4px 0;
+            margin-top: -12px;
+            p{
+                @include font__black_lg;
+            }
+        }
+        .garantees__item_3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 4px 0;
+            p{
+                @include font__black_lg;
+                text-align: center;
+            }
+        }
+        .garantees__item_4{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 4px 0;
+            p{
+                @include font__black_lg;
+                text-align: center;
+            }
+        }
+    }
+    .btn__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 36px;
+        .garantees__btn{
+            background-color: $purple;
+            color: $white;
+            border:none;
+            border-radius: 12px;
+            @include font__black_base;
+            padding: 16px 28px;
+            cursor: pointer;
+        }
+    }
+}
 
 
 
