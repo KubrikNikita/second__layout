@@ -80,212 +80,263 @@ html, body {
   font-family: "Formular", sans-serif;
 }
 
-header {
-  background-color: #F9FAFB;
-  width: 100%;
-}
-header .wrapper {
+.noproblem__block {
   max-width: 1536px;
   margin: 0 auto;
-}
-header .header__img_1028 {
-  display: none;
-}
-header .header__line_top {
-  max-width: 1536px;
-  margin: 0 auto;
-  padding: 24px 0;
+  padding: 72px 0px;
   display: flex;
   justify-content: space-between;
 }
-header .header__line_top .header__line_top_1 {
+.noproblem__block .noproblem {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 12px 0;
 }
-header .header__line_top .header__line_top_1 h1 {
-  font-family: "Formular";
-  font-weight: 900;
-}
-header .header__line_top .header__line_top_2 {
+.noproblem__block .noproblem .noproblem__text_1920 {
+  gap: 12px 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0 12px;
+  flex-direction: column;
 }
-header .header__line_top .header__line_top_2 p {
-  font-size: 16px;
-  font-style: normal;
-  font-family: "Formular", sans-serif;
-  text-align: right;
-  line-height: 20px;
-}
-header .header__line_top .header__line_top_2 .num {
+.noproblem__block .noproblem .noproblem__text_1920 h1 {
   font-size: 36px;
   font-weight: 900;
   font-family: "Formular", sans-serif;
 }
-header .header__line_top .header__line_top_2 p1 {
-  font-size: 24px;
-  font-weight: lighter;
+.noproblem__block .noproblem .noproblem__text_1920 p1 {
+  font-size: 20px;
+  font-style: normal;
   font-family: "Formular", sans-serif;
+  line-height: 28px;
 }
-header .header__line_top .header__line_top_2 .num__wrapper {
-  flex-direction: column;
-  text-align: right;
+.noproblem__block .noproblem .noproblem__text_1536 {
+  display: none;
 }
-header .header__line_bot {
-  padding: 24px 0;
-  display: flex;
-  justify-content: space-between;
+.noproblem__block .noproblem .noproblem__text_1024 {
+  display: none;
 }
-header .header__line_bot .header__line_bot_1 {
+.noproblem__block .noproblem .noproblem__text_758 {
+  display: none;
+}
+.noproblem__block .noproblem .noproblem__block_img .img {
+  border-radius: 16px;
+}
+.noproblem__block .noproblem .noproblem__block_img_1536 {
+  display: none;
+}
+.noproblem__block .noproblem .noproblem__block_img_758 {
+  display: none;
+}
+.noproblem__block .calculator {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  background-color: #F9FAFB;
+  border-radius: 16px;
+  padding: 0 130px;
 }
-header .header__line_bot .header__line_bot_1 .nav {
+.noproblem__block .calculator .calculator__text {
+  gap: 12px 0;
   display: flex;
-  flex-direction: row;
-  gap: 0 24px;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 24px;
+  padding-bottom: 28px;
 }
-header .header__line_bot .header__line_bot_1 .nav .nav-item {
-  text-decoration: none;
-  color: #111827;
-  font-size: 16px;
+.noproblem__block .calculator .calculator__text h1 {
+  font-size: 30px;
   font-weight: bold;
   font-family: "Formular", sans-serif;
 }
-header .header__line_bot .header__line_bot_1 .nav .nav-item:hover {
-  color: #8B5CF6;
-}
-header .header__line_bot .header__line_bot_1 .nav .nav-item:focus {
-  color: #8B5CF6;
-  border-bottom: 2px dashed #8B5CF6;
-}
-header .header__line_bot .header__line_bot_2 {
-  display: flex;
-}
-header .header__line_bot .header__line_bot_2 .header__btn {
+.noproblem__block .calculator .calculator__text p1 {
   font-size: 16px;
   font-style: normal;
   font-family: "Formular", sans-serif;
-  font-weight: bold;
-  color: #F9FAFB;
+  text-align: center;
+}
+.noproblem__block .calculator .form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 24px;
+}
+.noproblem__block .calculator .form .columns__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.noproblem__block .calculator .form .input-box input {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Formular", sans-serif;
+  height: 48px;
+  border: 2px solid #111827;
+  border-radius: 4px;
+  padding-left: 12px;
+}
+.noproblem__block .calculator .form .input-box_name input {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Formular", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  height: 48px;
+  border: 2px solid #111827;
+  border-radius: 4px;
+  padding-left: 12px;
+}
+.noproblem__block .calculator .form .input-box {
+  padding-bottom: 24px;
+}
+.noproblem__block .calculator .form .input-box_name {
+  width: 100%;
+  padding-bottom: 24px;
+}
+.noproblem__block .calculator .form .first__column {
+  margin-right: 24px;
+}
+.noproblem__block .calculator .form .form__btn {
+  width: 100%;
   background-color: #8B5CF6;
+  color: #F9FAFB;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Formular", sans-serif;
   border: none;
   border-radius: 4px;
-  padding: 10px 28px;
   cursor: pointer;
 }
 
-.header__line_bot_3 {
-  display: none;
-}
-
-.burger__icon {
-  display: none;
-}
-
 @media (max-width: 1536px) {
-  header .wrapper {
+  .noproblem__block {
     max-width: 1024px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
-  header .header__line_top .header__line_top_2 .num {
+  .noproblem__block .noproblem {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+  }
+  .noproblem__block .noproblem .noproblem__text {
+    display: flex;
+    flex-direction: column;
+  }
+  .noproblem__block .noproblem .noproblem__block_img {
+    display: none;
+  }
+  .noproblem__block .noproblem .noproblem__block_img_758 {
+    display: none;
+  }
+  .noproblem__block .noproblem .noproblem__block_img_1536 {
+    display: block;
+  }
+  .noproblem__block .noproblem .noproblem__block_img_1536 .img {
+    border-radius: 16px;
+  }
+  .noproblem__block .noproblem .noproblem__text_1536 {
+    display: flex;
+    gap: 12px 0;
+    flex-direction: column;
+  }
+  .noproblem__block .noproblem .noproblem__text_1536 h1 {
     font-size: 30px;
     font-weight: 900;
     font-family: "Formular", sans-serif;
+    line-height: 36px;
   }
-  header .header__line_top .header__line_top_2 p1 {
+  .noproblem__block .noproblem .noproblem__text_1536 p1 {
     font-size: 20px;
-    font-weight: lighter;
+    font-style: normal;
     font-family: "Formular", sans-serif;
+    line-height: 28px;
+  }
+  .noproblem__block .noproblem .noproblem__text_1920 {
+    display: none;
+  }
+  .noproblem__block .noproblem .noproblem__text_1024 {
+    display: none;
+  }
+  .noproblem__block .noproblem .noproblem__text_758 {
+    display: none;
   }
 }
 @media (max-width: 1024px) {
-  header .wrapper {
-    max-width: 768px;
+  .noproblem__block {
+    max-width: 758px;
     margin: 0 auto;
   }
-  header .header__line_top .header__line_top_2 .num {
-    font-size: 24px;
+  .noproblem__block .noproblem {
+    flex-direction: column;
+  }
+  .noproblem__block .noproblem .noproblem__block_img {
+    display: block;
+    width: 100%;
+  }
+  .noproblem__block .noproblem .noproblem__block_img_1536 {
+    display: none;
+  }
+  .noproblem__block .noproblem .noproblem__block_img_758 {
+    display: none;
+  }
+  .noproblem__block .noproblem .noproblem__text_1024 {
+    display: flex;
+    flex-direction: column;
+  }
+  .noproblem__block .noproblem .noproblem__text_1024 h1 {
+    font-size: 30px;
     font-weight: 900;
     font-family: "Formular", sans-serif;
+    line-height: 36px;
   }
-  header .header__line_top .header__line_top_2 p1 {
-    font-size: 16px;
-    font-weight: lighter;
-    font-family: "Formular", sans-serif;
-  }
-  header .header__text {
-    display: none;
-  }
-  header .header__img {
-    display: none;
-  }
-  header .header__img_1028 {
-    display: block;
-  }
-  header .header__line_top {
-    padding: 24px 0 0 0;
-  }
-  header .header__line_bot {
-    padding: 12px 0 0 0;
-  }
-  header .header__line_bot_3 {
-    display: flex;
-    position: relative;
-    padding-top: 16px;
-    font-size: 14px;
+  .noproblem__block .noproblem .noproblem__text_1024 p1 {
+    font-size: 20px;
     font-style: normal;
     font-family: "Formular", sans-serif;
-    padding-bottom: 24px;
-    color: #111827;
+    line-height: 28px;
   }
-  header .header__line_bot_3 .header__line_bot_text_1 {
-    position: absolute;
-    left: 32px;
-    top: 4px;
+  .noproblem__block .noproblem .noproblem__text_1536 {
+    display: none;
   }
-  header .header__line_bot_3 .header__line_bot_text_2 {
-    position: absolute;
-    left: 273px;
-    top: 4px;
-  }
-  header .header__line_bot_3 .header__line_bot_text_3 {
-    position: absolute;
-    left: 513px;
-    top: 14px;
+  .noproblem__block .noproblem .noproblem__text_758 {
+    display: none;
   }
 }
-@media (max-width: 758px) {
-  header .wrapper {
-    max-width: 638px;
+@media (max-width: 768px) {
+  .noproblem__block {
+    max-width: 640px;
     margin: 0 auto;
   }
-  header .header__img_1028 {
+  .noproblem__block .noproblem .noproblem__block_img {
     display: none;
   }
-  header .header__line_top {
-    display: flex;
-    align-items: center;
-  }
-  header .header__line_top .header__line_top_2 .num__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-  header .header__line_top .num__text {
-    display: none;
-  }
-  header .header__line_bot {
-    display: none;
-  }
-  header .header__line_bot_3 {
-    display: none;
-  }
-  header .burger__icon {
+  .noproblem__block .noproblem .noproblem__block_img_758 {
     display: block;
-    padding-left: 16px;
+  }
+  .noproblem__block .noproblem .noproblem__block_img_758 .img {
+    border-radius: 16px;
+  }
+  .noproblem__block .noproblem .noproblem__text_1536 {
+    display: none;
+  }
+  .noproblem__block .noproblem .noproblem__text_1024 {
+    display: none;
+  }
+  .noproblem__block .noproblem .noproblem__text_758 {
+    display: flex;
+    flex-direction: column;
+  }
+  .noproblem__block .noproblem .noproblem__text_758 h1 {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "Formular", sans-serif;
+    line-height: 36px;
+  }
+  .noproblem__block .noproblem .noproblem__text_758 p1 {
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Formular", sans-serif;
+    line-height: 28px;
   }
 }
