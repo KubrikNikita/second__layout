@@ -314,6 +314,7 @@ header{
         justify-content: center;
         align-items: center;
         padding-top: 36px;
+        padding-bottom: 72px;
         .garantees__btn{
             background-color: $purple;
             color: $white;
@@ -325,7 +326,65 @@ header{
         }
     }
 }
-
+.reviews__wrapper{
+    max-width: 1536px;
+    margin: 0 auto;
+    .reviews__title{
+        display: flex;
+        justify-content: center;
+        @include font__black_3xl;
+        padding-bottom: 32px;
+    }
+    .card__container{
+        display: flex;
+        align-items: center;
+        gap: 0 47px;
+        
+        .reviews__card_1{
+            background-color: $white;
+            border-radius: 16px;
+            padding: 32px 43px;
+            position: relative;
+            .card__text{
+                @include font__bold_2xl;
+            }
+            .author{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: $gray;
+                @include font__bold_2xl;
+                padding-top:25px;
+            }
+            .card__img{
+                position: absolute;
+                right: 18px;
+                bottom: 8px;
+            }
+        }
+        .reviews__card_2{
+            background-color: $white;
+            border-radius: 16px;
+            padding: 32px 43px;
+            position: relative;
+            .card__text{
+                @include font__bold_2xl;
+            }
+            .author{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: $gray;
+                @include font__bold_2xl;
+            }
+            .card__img{
+                position: absolute;
+                right: 18px;
+                bottom: 8px;
+            }
+        }
+    }
+}
 
 
 

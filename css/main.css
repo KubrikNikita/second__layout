@@ -434,6 +434,7 @@ header .header__line_bot .header__line_bot_2 .header__btn {
   justify-content: center;
   align-items: center;
   padding-top: 36px;
+  padding-bottom: 72px;
 }
 .garantees__wrapper .btn__container .garantees__btn {
   background-color: #8B5CF6;
@@ -445,4 +446,73 @@ header .header__line_bot .header__line_bot_2 .header__btn {
   font-family: "Formular", sans-serif;
   padding: 16px 28px;
   cursor: pointer;
+}
+
+.reviews__wrapper {
+  max-width: 1536px;
+  margin: 0 auto;
+}
+.reviews__wrapper .reviews__title {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+  padding-bottom: 32px;
+}
+.reviews__wrapper .card__container {
+  display: flex;
+  align-items: center;
+  gap: 0 47px;
+}
+.reviews__wrapper .card__container .reviews__card_1 {
+  background-color: #F9FAFB;
+  border-radius: 16px;
+  padding: 32px 43px;
+  position: relative;
+}
+.reviews__wrapper .card__container .reviews__card_1 .card__text {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Formular", sans-serif;
+}
+.reviews__wrapper .card__container .reviews__card_1 .author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #6B7280;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Formular", sans-serif;
+  padding-top: 25px;
+}
+.reviews__wrapper .card__container .reviews__card_1 .card__img {
+  position: absolute;
+  right: 18px;
+  bottom: 8px;
+}
+.reviews__wrapper .card__container .reviews__card_2 {
+  background-color: #F9FAFB;
+  border-radius: 16px;
+  padding: 32px 43px;
+  position: relative;
+}
+.reviews__wrapper .card__container .reviews__card_2 .card__text {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Formular", sans-serif;
+}
+.reviews__wrapper .card__container .reviews__card_2 .author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #6B7280;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Formular", sans-serif;
+}
+.reviews__wrapper .card__container .reviews__card_2 .card__img {
+  position: absolute;
+  right: 18px;
+  bottom: 8px;
 }

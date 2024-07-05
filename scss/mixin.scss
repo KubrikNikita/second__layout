@@ -54,6 +54,13 @@
         family: 'Formular',sans-serif;
     }
 }
+@mixin font__bold_2xl{
+    font: {
+        size: 24px;
+        weight:bold;
+        family: 'Formular',sans-serif;
+    }
+}
 @mixin font__bold_3xl{
     font: {
         size: 30px;
