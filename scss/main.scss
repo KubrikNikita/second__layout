@@ -9,13 +9,13 @@ html, body{
     background-color:  $background;
     font-family: 'Formular',sans-serif;
 }
+.wrapper{
+    max-width: 1536px;
+    margin: 0 auto;
+}
 header{
     background-color: $white;
     width: 100%;
-    .wrapper{
-    max-width: 1536px;
-    margin: 0 auto;
-    }
     .header__img_1028{
         display: none;
     }
@@ -103,11 +103,10 @@ header{
     display: none;
 }
 @media (max-width: 1536px){
+    .wrapper{
+        padding: 0 255px;
+    }
     header{
-        .wrapper{
-            max-width: 1024px;
-            margin: 0 auto;
-        }
         .header__line_top{
             .header__line_top_2{
                 .num{
@@ -121,11 +120,10 @@ header{
     }
 }
 @media (max-width: 1024px){
+    .wrapper{
+        padding: 0 128px;
+    }
     header{
-        .wrapper{
-            max-width: 768px;
-            margin: 0 auto;
-        }
         .header__line_top{
             .header__line_top_2{
                 .num{
@@ -153,35 +151,20 @@ header{
         }
         .header__line_bot_3{
             display: flex;
-            position: relative;
-            padding-top: 16px;
+            padding: 16px 32px 0 32px;
             @include font__regular_sm;
             padding-bottom: 24px;
             color: #111827;
-            .header__line_bot_text_1{
-                position: absolute;
-                left:32px;
-                top: 4px;
-            }
-            .header__line_bot_text_2{
-                position:absolute;
-                left:273px;
-                top: 4px;
-            }
-            .header__line_bot_text_3{
-                position: absolute;
-                left:513px;
-                top: 14px;
-            }
+            justify-content: space-between;
+            text-align: center;
         }
     }
 }
 @media (max-width: 758px){
+    .wrapper{
+        padding: 0 60px;
+    }
     header{
-        .wrapper{
-            max-width: 638px;
-            margin: 0 auto;
-        }
         .header__img_1028{
             display: none;
         }
