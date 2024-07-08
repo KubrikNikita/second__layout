@@ -80,195 +80,93 @@ html, body {
   font-family: "Formular", sans-serif;
 }
 
-.reviews__wrapper {
+.questions__wrapper {
   max-width: 1536px;
   margin: 0 auto;
   padding-top: 72px;
 }
-.reviews__wrapper .reviews__title {
+.questions__wrapper .form__wrapper {
+  padding-bottom: 24px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 64px 0;
+  background-color: #F9FAFB;
+  border-radius: 16px;
+}
+.questions__wrapper .form__wrapper .input-boxes__wrapper {
+  display: flex;
+  gap: 24px;
+}
+.questions__wrapper .form__wrapper .form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.questions__wrapper .form__wrapper .form h1 {
   font-size: 30px;
   font-weight: 900;
   font-family: "Formular", sans-serif;
   padding-bottom: 32px;
-  align-items: center;
 }
-.reviews__wrapper .card__container {
+.questions__wrapper .form__wrapper .form .questions__input-box input {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Formular", sans-serif;
+  height: 48px;
+  border: 2px solid #111827;
+  border-radius: 4px;
+  padding-left: 12px;
+}
+.questions__wrapper .form__wrapper .form .form__firstline {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0 47px;
+  flex-direction: column;
+  gap: 24px 24px;
 }
-.reviews__wrapper .card__container .card__container_withoutarrows {
+.questions__wrapper .form__wrapper .form .form__secondline {
   display: flex;
-  align-items: center;
-  gap: 0 24px;
-  justify-content: space-between;
-  padding: 0 23px;
+  flex-direction: column;
+  gap: 24px 24px;
 }
-.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 {
-  background-color: #F9FAFB;
-  border-radius: 16px;
-  padding: 32px 43px;
-  position: relative;
+.questions__wrapper .form__wrapper .form .questions__input-box_message input {
+  box-sizing: border-box;
+  padding-bottom: 100px;
+  margin-top: 24px;
+  width: 462px;
+  height: 150px;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Formular", sans-serif;
+  border: 2px solid #111827;
+  border-radius: 4px;
+  padding-left: 12px;
 }
-.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .card__text {
-  font-size: 24px;
+.questions__wrapper .form__wrapper .form .questions__btn {
+  width: 100%;
+  background-color: #8B5CF6;
+  color: #F9FAFB;
+  padding: 10px 0;
+  font-size: 16px;
   font-weight: bold;
   font-family: "Formular", sans-serif;
-}
-.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .card__text_1536 {
-  display: none;
-}
-.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .card__text_768 {
-  display: none;
-}
-.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .author {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #6B7280;
-  font-size: 24px;
-  font-weight: lighter;
-  font-family: "Formular", sans-serif;
-  padding-top: 25px;
-}
-.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .card__img {
-  position: absolute;
-  right: 18px;
-  bottom: 8px;
-}
-.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 {
-  background-color: #F9FAFB;
-  border-radius: 16px;
-  padding: 32px 43px;
-  position: relative;
-}
-.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 .card__text {
-  font-size: 24px;
-  font-weight: bold;
-  font-family: "Formular", sans-serif;
-}
-.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 .card__text_1536 {
-  display: none;
-}
-.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 .author {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #6B7280;
-  font-size: 24px;
-  font-weight: lighter;
-  font-family: "Formular", sans-serif;
-}
-.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 .card__img {
-  position: absolute;
-  right: 18px;
-  bottom: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 24px;
 }
 
 @media (max-width: 1536px) {
-  .reviews__wrapper {
+  .questions__wrapper {
     max-width: 1024px;
-    margin: 0 auto;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 {
-    width: 310px;
-    height: 212px;
-    padding: 16px;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .card__text_1536 {
-    display: flex;
-    padding-bottom: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: "Formular", sans-serif;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .card__text {
-    display: none;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .author {
-    font-size: 16px;
-    font-weight: lighter;
-    font-family: "Formular", sans-serif;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 {
-    width: 310px;
-    height: 212px;
-    padding: 16px;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 .card__text_1536 {
-    display: flex;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: "Formular", sans-serif;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 .card__text {
-    display: none;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 .card__text_768 {
-    display: none;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 .author {
-    font-size: 16px;
-    font-weight: lighter;
-    font-family: "Formular", sans-serif;
   }
 }
 @media (max-width: 1024px) {
-  .reviews__wrapper {
+  .questions__wrapper {
     max-width: 768px;
-    margin: 0 auto;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 {
-    display: none;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 {
-    width: 100%;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .card__text_1536 {
-    padding: 32px 16px 0px 16px;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .card__text_768 {
-    display: none;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .author {
-    padding: 24px 16px 32px 16px;
-    display: flex;
-    align-items: center;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .card__img {
-    display: flex;
-    align-items: center;
   }
 }
 @media (max-width: 758px) {
-  .reviews__wrapper {
+  .questions__wrapper {
     max-width: 640px;
-    margin: 0 auto;
-    gap: 0 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows {
-    padding: 0 0;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 {
-    display: none;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 {
-    width: 100%;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .card__text_1536 {
-    display: none;
-  }
-  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .card__text_768 {
-    display: flex;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: "Formular", sans-serif;
   }
 }

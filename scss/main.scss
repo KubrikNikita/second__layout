@@ -9,186 +9,85 @@ html, body{
     background-color:  $background;
     font-family: 'Formular',sans-serif;
 }
-.reviews__wrapper{
+.questions__wrapper{
     max-width: 1536px;
     margin: 0 auto;
     padding-top: 72px;
-    .reviews__title{
+    .form__wrapper{
+        padding-bottom: 24px;
         display: flex;
         justify-content: center;
-        @include font__black_3xl;
-        padding-bottom: 32px;
         align-items: center;
-    }
-    .card__container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 0 47px;
-        .card__container_withoutarrows{
+        padding: 64px 0;
+        background-color: $white;
+        border-radius: 16px;
+        .input-boxes__wrapper{
+            display: flex;
+            gap: 24px;
+        }
+        .form{
             display: flex;
             align-items: center;
-            gap: 0 24px;
-            justify-content: space-between;
-            padding: 0 23px;
-            .reviews__card_1{
-                background-color: $white;
-                border-radius: 16px;
-                padding: 32px 43px;
-                position: relative;
-                .card__text{
-                @include font__bold_2xl;
-                }
-                .card__text_1536{
-                    display: none;
-                }
-                .card__text_768{
-                    display: none;
-                }
-                .author{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    color: $gray;
-                    @include font__lighter_2xl;
-                    padding-top:25px;
-                }
-                .card__img{
-                    position: absolute;
-                    right: 18px;
-                    bottom: 8px;
-                }
+            flex-direction: column;
+            h1{
+                @include font__black_3xl;
+                padding-bottom: 32px;
             }
-            .reviews__card_2{
-                background-color: $white;
-                border-radius: 16px;
-                padding: 32px 43px;
-                position: relative;
-                .card__text{
-                    @include font__bold_2xl;
-                }
-                .card__text_1536{
-                    display: none;
-                }
-                
-                .author{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    color: $gray;
-                    @include font__lighter_2xl;
-                }
-                .card__img{
-                    position: absolute;
-                    right: 18px;
-                    bottom: 8px;
-                }
+            .questions__input-box input{
+                @include font__regular_base;
+                height: 48px;
+                border: 2px solid $black;
+                border-radius: 4px;
+                padding-left: 12px;
+            }
+            .form__firstline{
+                display: flex;
+                flex-direction: column;
+                gap: 24px 24px;
+            }
+            .form__secondline{
+                display: flex;
+                flex-direction: column;
+                gap: 24px 24px;
+            }
+            
+            .questions__input-box_message input{
+                box-sizing: border-box;
+                padding-bottom:100px;
+                margin-top: 24px;
+                width: 462px;
+                height: 150px;
+                @include font__regular_base;
+                border: 2px solid $black;
+                border-radius: 4px;
+                padding-left: 12px;
+            }    
+            .questions__btn{
+                width: 100%;
+                background-color: $purple;
+                color: $white;
+                padding: 10px 0;
+                @include font__bold_base;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-top: 24px;
             }
         }
     }
 }
 @media (max-width: 1536px){
-    .reviews__wrapper{
+    .questions__wrapper{
         max-width: 1024px;
-        margin: 0 auto;
-        .card__container{
-            .card__container_withoutarrows{
-                .reviews__card_1{
-                    width: 310px;
-                    height: 212px;
-                    padding: 16px;
-                    .card__text_1536{
-                        display: flex;
-                        padding-bottom: 10px;
-                        @include font__bold_lg;
-                    }
-                    .card__text{
-                        display: none;
-                    }
-                    .author{
-                        @include font__light_base;
-                    }
-                }
-                .reviews__card_2{
-                    width: 310px;
-                    height: 212px;
-                    padding: 16px;
-                    .card__text_1536{
-                        display: flex;
-                        @include font__bold_lg;
-                    }
-                    .card__text{
-                        display: none
-                    }
-                    .card__text_768{
-                        display: none;
-                    }
-                    .author{
-                        @include font__light_base;
-                    }
-                }
-            }
-        }
     }
 }
 @media (max-width:1024px){
-    .reviews__wrapper{
+    .questions__wrapper{
         max-width: 768px;
-        margin: 0 auto;
-        .card__container{
-            .card__container_withoutarrows{
-                .reviews__card_2{
-                    display: none;
-                }
-                .reviews__card_1{
-                    width: 100%;
-                    .card__text_1536{
-                        padding: 32px 16px 0px 16px;
-                    }
-                    .card__text_768{
-                        display: none;
-                    }
-                    .author{
-                        padding: 24px 16px 32px 16px;
-                        display: flex;
-                        align-items: center;
-                    }
-                    .card__img{
-                        display: flex;
-                        align-items: center;
-                    }
-                }
-                
-            }
-        }
     }
 }
-@media (max-width:758px) {
-    .reviews__wrapper{
+@media (max-width:758px){
+    .questions__wrapper{
         max-width: 640px;
-        margin: 0 auto;
-        gap: 0 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        .card__container{
-            .card__container_withoutarrows{
-                padding: 0 0;
-                .reviews__card_2{
-                    display: none;
-                }
-                .reviews__card_1{
-                    width: 100%;
-                    .card__text_1536{
-                        display: none;
-                    }
-                    .card__text_768{
-                        display: flex;
-                        @include font__bold_lg;
-                    }
-                }
-            }
-        }
     }
 }
