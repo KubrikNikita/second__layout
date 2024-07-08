@@ -9,14 +9,15 @@ html, body{
     background-color:  $background;
     font-family: 'Formular',sans-serif;
 }
-.advantages__wrapper{
-    max-width: 1536px;
+.wrapper{
+    max-width: 1456px;
     margin: 0 auto;
-    padding-top:72px;
+    padding: 0 60px;
     .advantages__title{
         display: flex;
         justify-content: center;
         padding-bottom: 24px;
+        padding-top: 72px;
         h1{
             @include font__black_3xl;
         }
@@ -78,10 +79,7 @@ html, body{
     }
 }
 @media (max-width: 1536px){
-    .advantages__wrapper{
-        max-width: 1024px;
-        margin: 0 auto;
-        padding-top:72px;
+    .wrapper{
         .advantages_1920{
             display: none;
         }
@@ -163,10 +161,7 @@ html, body{
     }
 }
 @media (max-width: 1024px){
-    .advantages__wrapper{
-        max-width: 758px;
-        margin: 0 auto;
-        padding-top:72px;
+    .wrapper{
         .advantages_1920{
             display: none;
         }
@@ -248,9 +243,7 @@ html, body{
     }
 }
 @media (max-width:768px){
-    .advantages__wrapper{
-        max-width: 640px;
-        margin: 0 auto;
+    .wrapper{
         .advantages_1024{
             display: none;
         }

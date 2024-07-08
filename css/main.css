@@ -80,77 +80,78 @@ html, body {
   font-family: "Formular", sans-serif;
 }
 
-.advantages__wrapper {
-  max-width: 1536px;
+.wrapper {
+  max-width: 1456px;
   margin: 0 auto;
-  padding-top: 72px;
+  padding: 0 60px;
 }
-.advantages__wrapper .advantages__title {
+.wrapper .advantages__title {
   display: flex;
   justify-content: center;
   padding-bottom: 24px;
+  padding-top: 72px;
 }
-.advantages__wrapper .advantages__title h1 {
+.wrapper .advantages__title h1 {
   font-size: 30px;
   font-weight: 900;
   font-family: "Formular", sans-serif;
 }
-.advantages__wrapper .advantages_1536 {
+.wrapper .advantages_1536 {
   display: none;
 }
-.advantages__wrapper .advantages_1024 {
+.wrapper .advantages_1024 {
   display: none;
 }
-.advantages__wrapper .advantages_768 {
+.wrapper .advantages_768 {
   display: none;
 }
-.advantages__wrapper .advantages_1920 .advantages__firstline {
+.wrapper .advantages_1920 .advantages__firstline {
   display: flex;
   justify-content: space-between;
 }
-.advantages__wrapper .advantages_1920 .advantages__firstline .card__content {
+.wrapper .advantages_1920 .advantages__firstline .card__content {
   display: flex;
   padding: 24px;
 }
-.advantages__wrapper .advantages_1920 .advantages__firstline .card__content .card__text {
+.wrapper .advantages_1920 .advantages__firstline .card__content .card__text {
   padding-top: 16px;
   padding-left: 12px;
   display: flex;
   gap: 12px 0;
   flex-direction: column;
 }
-.advantages__wrapper .advantages_1920 .advantages__firstline .card__content .card__text h1 {
+.wrapper .advantages_1920 .advantages__firstline .card__content .card__text h1 {
   font-size: 24px;
   font-weight: 900;
   font-family: "Formular", sans-serif;
 }
-.advantages__wrapper .advantages_1920 .advantages__firstline .card__content .card__text p1 {
+.wrapper .advantages_1920 .advantages__firstline .card__content .card__text p1 {
   font-size: 14px;
   font-style: normal;
   font-family: "Formular", sans-serif;
   line-height: 20px;
 }
-.advantages__wrapper .advantages_1920 .advantages__secondline {
+.wrapper .advantages_1920 .advantages__secondline {
   display: flex;
   justify-content: space-between;
 }
-.advantages__wrapper .advantages_1920 .advantages__secondline .card__content {
+.wrapper .advantages_1920 .advantages__secondline .card__content {
   display: flex;
   padding: 24px;
 }
-.advantages__wrapper .advantages_1920 .advantages__secondline .card__content .card__text {
+.wrapper .advantages_1920 .advantages__secondline .card__content .card__text {
   padding-top: 16px;
   padding-left: 12px;
   display: flex;
   gap: 12px 0;
   flex-direction: column;
 }
-.advantages__wrapper .advantages_1920 .advantages__secondline .card__content .card__text h1 {
+.wrapper .advantages_1920 .advantages__secondline .card__content .card__text h1 {
   font-size: 24px;
   font-weight: 900;
   font-family: "Formular", sans-serif;
 }
-.advantages__wrapper .advantages_1920 .advantages__secondline .card__content .card__text p1 {
+.wrapper .advantages_1920 .advantages__secondline .card__content .card__text p1 {
   font-size: 14px;
   font-style: normal;
   font-family: "Formular", sans-serif;
@@ -158,96 +159,91 @@ html, body {
 }
 
 @media (max-width: 1536px) {
-  .advantages__wrapper {
-    max-width: 1024px;
-    margin: 0 auto;
-    padding-top: 72px;
-  }
-  .advantages__wrapper .advantages_1920 {
+  .wrapper .advantages_1920 {
     display: none;
   }
-  .advantages__wrapper .advantages_1024 {
+  .wrapper .advantages_1024 {
     display: none;
   }
-  .advantages__wrapper .advantages_768 {
+  .wrapper .advantages_768 {
     display: none;
   }
-  .advantages__wrapper .advantages_1536 {
+  .wrapper .advantages_1536 {
     display: block;
   }
-  .advantages__wrapper .advantages_1536 .advantages__firstline {
+  .wrapper .advantages_1536 .advantages__firstline {
     display: flex;
     justify-content: space-between;
   }
-  .advantages__wrapper .advantages_1536 .advantages__firstline .card__content {
+  .wrapper .advantages_1536 .advantages__firstline .card__content {
     display: flex;
     padding: 24px;
   }
-  .advantages__wrapper .advantages_1536 .advantages__firstline .card__content .card__text {
+  .wrapper .advantages_1536 .advantages__firstline .card__content .card__text {
     padding-top: 16px;
     padding-left: 12px;
     display: flex;
     gap: 12px 0;
     flex-direction: column;
   }
-  .advantages__wrapper .advantages_1536 .advantages__firstline .card__content .card__text h1 {
+  .wrapper .advantages_1536 .advantages__firstline .card__content .card__text h1 {
     font-size: 24px;
     font-weight: 900;
     font-family: "Formular", sans-serif;
   }
-  .advantages__wrapper .advantages_1536 .advantages__firstline .card__content .card__text p1 {
+  .wrapper .advantages_1536 .advantages__firstline .card__content .card__text p1 {
     font-size: 14px;
     font-style: normal;
     font-family: "Formular", sans-serif;
     line-height: 20px;
   }
-  .advantages__wrapper .advantages_1536 .advantages__secondline {
+  .wrapper .advantages_1536 .advantages__secondline {
     display: flex;
     justify-content: space-between;
   }
-  .advantages__wrapper .advantages_1536 .advantages__secondline .card__content {
+  .wrapper .advantages_1536 .advantages__secondline .card__content {
     display: flex;
     padding: 24px;
   }
-  .advantages__wrapper .advantages_1536 .advantages__secondline .card__content .card__text {
+  .wrapper .advantages_1536 .advantages__secondline .card__content .card__text {
     padding-top: 16px;
     padding-left: 12px;
     display: flex;
     gap: 12px 0;
     flex-direction: column;
   }
-  .advantages__wrapper .advantages_1536 .advantages__secondline .card__content .card__text h1 {
+  .wrapper .advantages_1536 .advantages__secondline .card__content .card__text h1 {
     font-size: 24px;
     font-weight: 900;
     font-family: "Formular", sans-serif;
   }
-  .advantages__wrapper .advantages_1536 .advantages__secondline .card__content .card__text p1 {
+  .wrapper .advantages_1536 .advantages__secondline .card__content .card__text p1 {
     font-size: 14px;
     font-style: normal;
     font-family: "Formular", sans-serif;
     line-height: 20px;
   }
-  .advantages__wrapper .advantages_1536 .advantages__thirdline {
+  .wrapper .advantages_1536 .advantages__thirdline {
     display: flex;
     justify-content: space-between;
   }
-  .advantages__wrapper .advantages_1536 .advantages__thirdline .card__content {
+  .wrapper .advantages_1536 .advantages__thirdline .card__content {
     display: flex;
     padding: 24px;
   }
-  .advantages__wrapper .advantages_1536 .advantages__thirdline .card__content .card__text {
+  .wrapper .advantages_1536 .advantages__thirdline .card__content .card__text {
     padding-top: 16px;
     padding-left: 12px;
     display: flex;
     gap: 12px 0;
     flex-direction: column;
   }
-  .advantages__wrapper .advantages_1536 .advantages__thirdline .card__content .card__text h1 {
+  .wrapper .advantages_1536 .advantages__thirdline .card__content .card__text h1 {
     font-size: 24px;
     font-weight: 900;
     font-family: "Formular", sans-serif;
   }
-  .advantages__wrapper .advantages_1536 .advantages__thirdline .card__content .card__text p1 {
+  .wrapper .advantages_1536 .advantages__thirdline .card__content .card__text p1 {
     font-size: 14px;
     font-style: normal;
     font-family: "Formular", sans-serif;
@@ -255,96 +251,91 @@ html, body {
   }
 }
 @media (max-width: 1024px) {
-  .advantages__wrapper {
-    max-width: 758px;
-    margin: 0 auto;
-    padding-top: 72px;
-  }
-  .advantages__wrapper .advantages_1920 {
+  .wrapper .advantages_1920 {
     display: none;
   }
-  .advantages__wrapper .advantages_1536 {
+  .wrapper .advantages_1536 {
     display: none;
   }
-  .advantages__wrapper .advantages_768 {
+  .wrapper .advantages_768 {
     display: none;
   }
-  .advantages__wrapper .advantages_1024 {
+  .wrapper .advantages_1024 {
     display: block;
   }
-  .advantages__wrapper .advantages_1024 .advantages__firstline {
+  .wrapper .advantages_1024 .advantages__firstline {
     display: flex;
     justify-content: space-between;
   }
-  .advantages__wrapper .advantages_1024 .advantages__firstline .card__content {
+  .wrapper .advantages_1024 .advantages__firstline .card__content {
     display: flex;
     padding: 24px;
   }
-  .advantages__wrapper .advantages_1024 .advantages__firstline .card__content .card__text {
+  .wrapper .advantages_1024 .advantages__firstline .card__content .card__text {
     padding-top: 16px;
     padding-left: 12px;
     display: flex;
     gap: 12px 0;
     flex-direction: column;
   }
-  .advantages__wrapper .advantages_1024 .advantages__firstline .card__content .card__text h1 {
+  .wrapper .advantages_1024 .advantages__firstline .card__content .card__text h1 {
     font-size: 20px;
     font-weight: 900;
     font-family: "Formular", sans-serif;
   }
-  .advantages__wrapper .advantages_1024 .advantages__firstline .card__content .card__text p1 {
+  .wrapper .advantages_1024 .advantages__firstline .card__content .card__text p1 {
     font-size: 14px;
     font-style: normal;
     font-family: "Formular", sans-serif;
     line-height: 20px;
   }
-  .advantages__wrapper .advantages_1024 .advantages__secondline {
+  .wrapper .advantages_1024 .advantages__secondline {
     display: flex;
     justify-content: space-between;
   }
-  .advantages__wrapper .advantages_1024 .advantages__secondline .card__content {
+  .wrapper .advantages_1024 .advantages__secondline .card__content {
     display: flex;
     padding: 24px;
   }
-  .advantages__wrapper .advantages_1024 .advantages__secondline .card__content .card__text {
+  .wrapper .advantages_1024 .advantages__secondline .card__content .card__text {
     padding-top: 16px;
     padding-left: 12px;
     display: flex;
     gap: 12px 0;
     flex-direction: column;
   }
-  .advantages__wrapper .advantages_1024 .advantages__secondline .card__content .card__text h1 {
+  .wrapper .advantages_1024 .advantages__secondline .card__content .card__text h1 {
     font-size: 20px;
     font-weight: 900;
     font-family: "Formular", sans-serif;
   }
-  .advantages__wrapper .advantages_1024 .advantages__secondline .card__content .card__text p1 {
+  .wrapper .advantages_1024 .advantages__secondline .card__content .card__text p1 {
     font-size: 14px;
     font-style: normal;
     font-family: "Formular", sans-serif;
     line-height: 20px;
   }
-  .advantages__wrapper .advantages_1024 .advantages__thirdline {
+  .wrapper .advantages_1024 .advantages__thirdline {
     display: flex;
     justify-content: space-between;
   }
-  .advantages__wrapper .advantages_1024 .advantages__thirdline .card__content {
+  .wrapper .advantages_1024 .advantages__thirdline .card__content {
     display: flex;
     padding: 24px;
   }
-  .advantages__wrapper .advantages_1024 .advantages__thirdline .card__content .card__text {
+  .wrapper .advantages_1024 .advantages__thirdline .card__content .card__text {
     padding-top: 16px;
     padding-left: 12px;
     display: flex;
     gap: 12px 0;
     flex-direction: column;
   }
-  .advantages__wrapper .advantages_1024 .advantages__thirdline .card__content .card__text h1 {
+  .wrapper .advantages_1024 .advantages__thirdline .card__content .card__text h1 {
     font-size: 20px;
     font-weight: 900;
     font-family: "Formular", sans-serif;
   }
-  .advantages__wrapper .advantages_1024 .advantages__thirdline .card__content .card__text p1 {
+  .wrapper .advantages_1024 .advantages__thirdline .card__content .card__text p1 {
     font-size: 14px;
     font-style: normal;
     font-family: "Formular", sans-serif;
@@ -352,44 +343,40 @@ html, body {
   }
 }
 @media (max-width: 768px) {
-  .advantages__wrapper {
-    max-width: 640px;
-    margin: 0 auto;
-  }
-  .advantages__wrapper .advantages_1024 {
+  .wrapper .advantages_1024 {
     display: none;
   }
-  .advantages__wrapper .advantages_1536 {
+  .wrapper .advantages_1536 {
     display: none;
   }
-  .advantages__wrapper .advantages_1920 {
+  .wrapper .advantages_1920 {
     display: none;
   }
-  .advantages__wrapper .advantages_768 {
+  .wrapper .advantages_768 {
     display: flex;
     justify-content: center;
   }
-  .advantages__wrapper .advantages_768 .advantages__firstline {
+  .wrapper .advantages_768 .advantages__firstline {
     display: flex;
     flex-direction: column;
   }
-  .advantages__wrapper .advantages_768 .advantages__firstline .card__content {
+  .wrapper .advantages_768 .advantages__firstline .card__content {
     display: flex;
     padding: 24px;
   }
-  .advantages__wrapper .advantages_768 .advantages__firstline .card__content .card__text {
+  .wrapper .advantages_768 .advantages__firstline .card__content .card__text {
     padding-top: 16px;
     padding-left: 12px;
     display: flex;
     gap: 12px 0;
     flex-direction: column;
   }
-  .advantages__wrapper .advantages_768 .advantages__firstline .card__content .card__text h1 {
+  .wrapper .advantages_768 .advantages__firstline .card__content .card__text h1 {
     font-size: 20px;
     font-weight: 900;
     font-family: "Formular", sans-serif;
   }
-  .advantages__wrapper .advantages_768 .advantages__firstline .card__content .card__text p1 {
+  .wrapper .advantages_768 .advantages__firstline .card__content .card__text p1 {
     font-size: 14px;
     font-style: normal;
     font-family: "Formular", sans-serif;
