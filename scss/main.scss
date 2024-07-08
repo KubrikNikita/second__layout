@@ -9,12 +9,19 @@ html, body{
     background-color:  $background;
     font-family: 'Formular',sans-serif;
 }
-.noproblem__block{
-    max-width: 1536px;
+.wrapper{
+    max-width: 1456px;
     margin: 0 auto;
+    
+    padding: 0 60px;
+}
+
+
+.noproblem__block{
     padding: 72px 0px;
     display: flex;
     justify-content: space-between;
+    gap: 0 24px;
     .noproblem{
         display: flex;
         flex-direction: column;
@@ -43,6 +50,7 @@ html, body{
         .noproblem__block_img{
             .img{
                 border-radius: 16px;
+                width: 100%;
             }
         }
         .noproblem__block_img_1536{
@@ -52,81 +60,82 @@ html, body{
             display: none;
         }
     }
-    .calculator{
+    
+}
+
+.calculator{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $white;
+    border-radius: 16px;
+    padding: 0 130px;
+    .calculator__text{
+        gap: 12px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 24px;
+        padding-bottom: 28px;
+        h1{
+            @include font__bold_3xl;
+            display: flex;
+            align-items: center;        
+        }
+        p1{
+            @include font__regular_base;
+            text-align: center;
+        }
+    }
+    .form{
         display: flex;
         align-items: center;
         flex-direction: column;
-        background-color: $white;
-        border-radius: 16px;
-        padding: 0 130px;
-        .calculator__text{
-            gap: 12px 0;
+        padding-bottom: 24px;
+        .columns__wrapper{
             display: flex;
-            align-items: center;
-            flex-direction: column;
-            padding-top: 24px;
-            padding-bottom: 28px;
-            h1{
-                @include font__bold_3xl;
-            }
-            p1{
-                @include font__regular_base;
-                text-align: center;
-            }
+            flex-direction: row;
+            justify-content: center;
+            gap: 0 24px;
         }
-        .form{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
+        .input-box input{
+            @include font__regular_base;
+            height: 48px;
+            border: 2px solid $black;
+            border-radius: 4px;
+            padding-left: 12px;
+        }
+        .input-box_name input{
+            @include font__regular_base;
+            width: 100%;
+            box-sizing: border-box;
+            height: 48px;
+            border: 2px solid $black;
+            border-radius: 4px;
+            padding-left:12px;
+        }
+        .input-box{
             padding-bottom: 24px;
-            .columns__wrapper{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-            }
-            .input-box input{
-                @include font__regular_base;
-                height: 48px;
-                border: 2px solid $black;
-                border-radius: 4px;
-                padding-left: 12px;
-            }
-            .input-box_name input{
-                @include font__regular_base;
-                width: 100%;
-                box-sizing: border-box;
-                height: 48px;
-                border: 2px solid $black;
-                border-radius: 4px;
-                padding-left:12px;
-            }
-            .input-box{
-                padding-bottom: 24px;
-            }
-            .input-box_name{
-                width: 100%;
-                padding-bottom: 24px;
-            }
-            .first__column{
-                margin-right: 24px;
-            }
-            .form__btn{
-                width: 100%;
-                background-color: $purple;
-                color: $white;
-                padding: 10px 0;
-                @include font__bold_base;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-            }
+        }
+        .input-box_name{
+            width: 100%;
+            padding-bottom: 24px;
+        }
+        .form__btn{
+            width: 100%;
+            background-color: $purple;
+            color: $white;
+            padding: 10px 0;
+            @include font__bold_base;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
         }
     }
 }
+
 @media (max-width: 1536px){
     .noproblem__block{
-        max-width: 1024px;
-        margin: 0 auto;
         display: flex;
         flex-direction: column;
         .noproblem{
@@ -147,6 +156,7 @@ html, body{
                 display: block;
                 .img{
                     border-radius: 16px;
+                    width: 100%;
                 }
             }
             .noproblem__text_1536{
@@ -176,8 +186,6 @@ html, body{
 }
 @media (max-width:1024px){
     .noproblem__block{
-        max-width: 758px;
-        margin: 0 auto;
         .noproblem{
             flex-direction: column;
             .noproblem__block_img{
@@ -213,8 +221,6 @@ html, body{
 }
 @media (max-width:768px){
     .noproblem__block{
-        max-width: 640px;
-        margin: 0 auto;
         .noproblem{
             .noproblem__block_img{
                 display: none;
@@ -223,6 +229,7 @@ html, body{
                 display: block;
                 .img{
                     border-radius: 16px;
+                    width: 100%;
                 }
             }
             .noproblem__text_1536{
