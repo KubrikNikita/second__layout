@@ -1485,3 +1485,189 @@ body {
     display: none;
   }
 }
+.reviews__title {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+  padding-bottom: 32px;
+  align-items: center;
+  padding-top: 72px;
+}
+
+.reviews__wrapper .card__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 47px;
+}
+.reviews__wrapper .card__container .card__container_withoutarrows {
+  display: flex;
+  align-items: center;
+  gap: 0 24px;
+  justify-content: space-between;
+  padding: 0 23px;
+}
+.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 {
+  background-color: #F9FAFB;
+  border-radius: 16px;
+  padding: 32px 43px;
+  position: relative;
+}
+.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .reviews__card_text {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Formular", sans-serif;
+}
+.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .reviews__card_text_1536 {
+  display: none;
+}
+.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .reviews__card_text_768 {
+  display: none;
+}
+.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #6B7280;
+  font-size: 24px;
+  font-weight: lighter;
+  font-family: "Formular", sans-serif;
+  padding-top: 25px;
+}
+.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .quotes__img {
+  position: absolute;
+  right: 18px;
+  bottom: 8px;
+}
+.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 {
+  background-color: #F9FAFB;
+  border-radius: 16px;
+  padding: 32px 43px;
+  position: relative;
+}
+.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 .reviews__card_text {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Formular", sans-serif;
+}
+.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 .reviews__card_text_1536 {
+  display: none;
+}
+.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 .author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #6B7280;
+  font-size: 24px;
+  font-weight: lighter;
+  font-family: "Formular", sans-serif;
+}
+.reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 .quotes__img {
+  position: absolute;
+  right: 18px;
+  bottom: 8px;
+}
+
+@media (max-width: 1536px) {
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 {
+    width: 310px;
+    height: 212px;
+    padding: 16px;
+  }
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .reviews__card_text_1536 {
+    display: flex;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Formular", sans-serif;
+  }
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .reviews__card_text {
+    display: none;
+  }
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .author {
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: "Formular", sans-serif;
+  }
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 {
+    width: 310px;
+    height: 212px;
+    padding: 16px;
+  }
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 .reviews__card_text_1536 {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Formular", sans-serif;
+  }
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 .reviews__card_text {
+    display: none;
+  }
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 .reviews__card_text_768 {
+    display: none;
+  }
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 .author {
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: "Formular", sans-serif;
+  }
+}
+@media (max-width: 1024px) {
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 {
+    display: none;
+  }
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 {
+    width: 100%;
+  }
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .reviews__card_text_1536 {
+    padding: 32px 16px 0px 16px;
+  }
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .reviews__card_text_768 {
+    display: none;
+  }
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .author {
+    padding: 24px 16px 32px 16px;
+    display: flex;
+    align-items: center;
+  }
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .quotes__img {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .reviews__wrapper {
+    gap: 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .reviews__wrapper .card__container .card__container_withoutarrows {
+    padding: 0 0;
+  }
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_2 {
+    display: none;
+  }
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 {
+    width: 100%;
+  }
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .reviews__card_text_1536 {
+    display: none;
+  }
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .reviews__card_text_768 {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Formular", sans-serif;
+  }
+}
+@media (max-width: 640px) {
+  .reviews__wrapper .card__container .card__container_withoutarrows .reviews__card_1 .reviews__card_text_768 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Formular", sans-serif;
+  }
+}
