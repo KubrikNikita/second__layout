@@ -73,7 +73,8 @@
   src: url("/second__layout/fonts/formular-ultra-trial.otf");
   font-weight: 200;
 }
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: #E5E7EB;
@@ -81,77 +82,545 @@ html, body {
 }
 
 .wrapper {
-  max-width: 1456px;
   margin: 0 auto;
   padding: 0 60px;
 }
-.wrapper .advantages__title {
+
+.header__content_wrapper {
+  padding: 0 60px;
+  background-color: #F9FAFB;
+}
+
+.header {
+  width: 100%;
+}
+.header .header__img_1028 {
+  display: none;
+}
+.header .header__line_top {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header__line_top .header__line_top_1 {
+  display: flex;
+  align-items: center;
+}
+.header .header__line_top .header__line_top_1 h1 {
+  font-family: "Formular";
+  font-weight: 900;
+}
+.header .header__line_top .header__line_top_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 12px;
+}
+.header .header__line_top .header__line_top_2 p {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Formular", sans-serif;
+  text-align: right;
+  line-height: 20px;
+}
+.header .header__line_top .header__line_top_2 .num {
+  font-size: 36px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+}
+.header .header__line_top .header__line_top_2 p1 {
+  font-size: 24px;
+  font-weight: lighter;
+  font-family: "Formular", sans-serif;
+}
+.header .header__line_top .header__line_top_2 .num__wrapper {
+  flex-direction: column;
+  text-align: right;
+}
+.header .header__line_bot {
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header__line_bot .header__line_bot_1 {
+  display: flex;
+  align-items: center;
+}
+.header .header__line_bot .header__line_bot_1 .nav {
+  display: flex;
+  flex-direction: row;
+  gap: 0 24px;
+}
+.header .header__line_bot .header__line_bot_1 .nav .nav-item {
+  text-decoration: none;
+  color: #111827;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Formular", sans-serif;
+}
+.header .header__line_bot .header__line_bot_1 .nav .nav-item:hover {
+  color: #8B5CF6;
+}
+.header .header__line_bot .header__line_bot_1 .nav .nav-item:focus {
+  color: #8B5CF6;
+  border-bottom: 2px dashed #8B5CF6;
+}
+.header .header__line_bot .header__line_bot_2 {
+  display: flex;
+}
+.header .header__line_bot .header__line_bot_2 .header__btn {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Formular", sans-serif;
+  font-weight: bold;
+  color: #F9FAFB;
+  background-color: #8B5CF6;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 28px;
+  cursor: pointer;
+}
+
+.header__line_bot_3 {
+  display: none;
+}
+
+.burger__icon {
+  display: none;
+}
+
+@media (max-width: 1536px) {
+  .header .header__line_top .header__line_top_2 .num {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "Formular", sans-serif;
+  }
+  .header .header__line_top .header__line_top_2 p1 {
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: "Formular", sans-serif;
+  }
+}
+@media (max-width: 1024px) {
+  .header .header__line_top .header__line_top_2 .num {
+    font-size: 24px;
+    font-weight: 900;
+    font-family: "Formular", sans-serif;
+  }
+  .header .header__line_top .header__line_top_2 p1 {
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: "Formular", sans-serif;
+  }
+  .header .header__text {
+    display: none;
+  }
+  .header .header__img {
+    display: none;
+  }
+  .header .header__img_1028 {
+    display: block;
+  }
+  .header .header__line_top {
+    padding: 24px 0 0 0;
+  }
+  .header .header__line_bot {
+    padding: 12px 0 0 0;
+  }
+  .header .header__line_bot_3 {
+    display: flex;
+    padding: 16px 32px 0 32px;
+    font-size: 14px;
+    font-style: normal;
+    font-family: "Formular", sans-serif;
+    padding-bottom: 24px;
+    color: #111827;
+    justify-content: space-between;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .header .header__img_1028 {
+    display: none;
+  }
+  .header .header__line_top {
+    display: flex;
+    align-items: center;
+  }
+  .header .header__line_top .header__line_top_2 .num__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .header .header__line_top .num__text {
+    display: none;
+  }
+  .header .header__line_bot {
+    display: none;
+  }
+  .header .header__line_bot_3 {
+    display: none;
+  }
+  .header .burger__icon {
+    display: block;
+    padding-left: 16px;
+  }
+}
+.noproblem__block {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 24px;
+  padding-top: 72px;
+}
+.noproblem__block .noproblem {
+  display: flex;
+  flex-direction: column;
+  gap: 12px 0;
+  width: calc(50% - 12px);
+}
+.noproblem__block .noproblem .noproblem__text_1920 {
+  gap: 12px 0;
+  display: flex;
+  flex-direction: column;
+}
+.noproblem__block .noproblem .noproblem__text_1920 h1 {
+  font-size: 36px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+}
+.noproblem__block .noproblem .noproblem__text_1920 p1 {
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Formular", sans-serif;
+  line-height: 28px;
+}
+.noproblem__block .noproblem .noproblem__text_1536 {
+  display: none;
+}
+.noproblem__block .noproblem .noproblem__text_1024 {
+  display: none;
+}
+.noproblem__block .noproblem .noproblem__text_758 {
+  display: none;
+}
+.noproblem__block .noproblem .noproblem__block_img .img {
+  border-radius: 16px;
+  width: 100%;
+}
+.noproblem__block .noproblem .noproblem__block_img_1536 {
+  display: none;
+}
+.noproblem__block .noproblem .noproblem__block_img_758 {
+  display: none;
+}
+
+.calculator {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F9FAFB;
+  border-radius: 16px;
+  padding: 0 130px;
+  width: calc(50% - 12px);
+}
+.calculator .calculator__text {
+  gap: 12px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.calculator .calculator__text h1 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Formular", sans-serif;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.calculator .calculator__text p1 {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Formular", sans-serif;
+  text-align: center;
+}
+.calculator .form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 25px;
+  width: 100%;
+  height: 100%;
+}
+.calculator .form .columns__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0 24px;
+  width: 100%;
+}
+.calculator .form .columns__wrapper .first__column {
+  width: calc(50% - 12px);
+}
+.calculator .form .columns__wrapper .second__column {
+  width: calc(50% - 12px);
+}
+.calculator .form .input-box input {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Formular", sans-serif;
+  height: 48px;
+  border: 2px solid #111827;
+  border-radius: 4px;
+  padding-left: 12px;
+  width: 100%;
+}
+.calculator .form .input-box_name input {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Formular", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  height: 48px;
+  border: 2px solid #111827;
+  border-radius: 4px;
+  padding-left: 12px;
+  width: 100%;
+}
+.calculator .form .input-box {
+  padding-bottom: 25px;
+  width: 100%;
+}
+.calculator .form .input-box_name {
+  width: 100%;
+  padding-bottom: 25px;
+}
+.calculator .form .form__btn {
+  width: 100%;
+  background-color: #8B5CF6;
+  color: #F9FAFB;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Formular", sans-serif;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 1536px) {
+  .noproblem__block {
+    display: flex;
+    flex-direction: column;
+  }
+  .noproblem__block .noproblem {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+    width: 100%;
+  }
+  .noproblem__block .noproblem .noproblem__text {
+    display: flex;
+    flex-direction: column;
+  }
+  .noproblem__block .noproblem .noproblem__block_img {
+    display: none;
+  }
+  .noproblem__block .noproblem .noproblem__block_img_758 {
+    display: none;
+  }
+  .noproblem__block .noproblem .noproblem__block_img_1536 {
+    display: flex;
+    width: 100%;
+  }
+  .noproblem__block .noproblem .noproblem__block_img_1536 .img {
+    border-radius: 16px;
+    width: 100%;
+  }
+  .noproblem__block .noproblem .noproblem__text_1536 {
+    display: flex;
+    gap: 12px 0;
+    flex-direction: column;
+  }
+  .noproblem__block .noproblem .noproblem__text_1536 h1 {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "Formular", sans-serif;
+    line-height: 36px;
+  }
+  .noproblem__block .noproblem .noproblem__text_1536 p1 {
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Formular", sans-serif;
+    line-height: 28px;
+  }
+  .noproblem__block .noproblem .noproblem__text_1920 {
+    display: none;
+  }
+  .noproblem__block .noproblem .noproblem__text_1024 {
+    display: none;
+  }
+  .noproblem__block .noproblem .noproblem__text_758 {
+    display: none;
+  }
+  .noproblem__block .calculator {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .noproblem__block .noproblem {
+    display: flex;
+    flex-direction: column;
+  }
+  .noproblem__block .noproblem .noproblem__block_img {
+    display: block;
+    width: 100%;
+  }
+  .noproblem__block .noproblem .noproblem__block_img_1536 {
+    display: none;
+  }
+  .noproblem__block .noproblem .noproblem__block_img_758 {
+    display: none;
+  }
+  .noproblem__block .noproblem .noproblem__block_img {
+    display: inline;
+    width: 100%;
+  }
+  .noproblem__block .noproblem .noproblem__text_1024 {
+    display: flex;
+    flex-direction: column;
+  }
+  .noproblem__block .noproblem .noproblem__text_1024 h1 {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "Formular", sans-serif;
+    line-height: 36px;
+  }
+  .noproblem__block .noproblem .noproblem__text_1024 p1 {
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Formular", sans-serif;
+    line-height: 28px;
+  }
+  .noproblem__block .noproblem .noproblem__text_1536 {
+    display: none;
+  }
+  .noproblem__block .noproblem .noproblem__text_758 {
+    display: none;
+  }
+  .noproblem__block .calculator {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  .noproblem__block .noproblem .noproblem__block_img {
+    display: none;
+  }
+  .noproblem__block .noproblem .noproblem__block_img_758 {
+    display: block;
+    width: 100%;
+  }
+  .noproblem__block .noproblem .noproblem__block_img_758 .img {
+    border-radius: 16px;
+    width: 100%;
+  }
+  .noproblem__block .noproblem .noproblem__text_1536 {
+    display: none;
+  }
+  .noproblem__block .noproblem .noproblem__text_1024 {
+    display: none;
+  }
+  .noproblem__block .noproblem .noproblem__text_758 {
+    display: flex;
+    flex-direction: column;
+  }
+  .noproblem__block .noproblem .noproblem__text_758 h1 {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "Formular", sans-serif;
+    line-height: 36px;
+  }
+  .noproblem__block .noproblem .noproblem__text_758 p1 {
+    font-size: 20px;
+    font-style: normal;
+    font-family: "Formular", sans-serif;
+    line-height: 28px;
+  }
+}
+.advantages__title {
   display: flex;
   justify-content: center;
   padding-bottom: 24px;
   padding-top: 72px;
 }
-.wrapper .advantages__title h1 {
+.advantages__title h1 {
   font-size: 30px;
   font-weight: 900;
   font-family: "Formular", sans-serif;
 }
-.wrapper .advantages_1536 {
+
+.advantages_1536 {
   display: none;
 }
-.wrapper .advantages_1024 {
+
+.advantages_1024 {
   display: none;
 }
-.wrapper .advantages_768 {
+
+.advantages_768 {
   display: none;
 }
-.wrapper .advantages_1920 .advantages__firstline {
+
+.advantages_1920 .advantages__firstline {
   display: flex;
   justify-content: space-between;
 }
-.wrapper .advantages_1920 .advantages__firstline .card__content {
+.advantages_1920 .advantages__firstline .card__content {
   display: flex;
   padding: 24px;
 }
-.wrapper .advantages_1920 .advantages__firstline .card__content .card__text {
+.advantages_1920 .advantages__firstline .card__content .card__text {
   padding-top: 16px;
   padding-left: 12px;
   display: flex;
   gap: 12px 0;
   flex-direction: column;
 }
-.wrapper .advantages_1920 .advantages__firstline .card__content .card__text h1 {
+.advantages_1920 .advantages__firstline .card__content .card__text h1 {
   font-size: 24px;
   font-weight: 900;
   font-family: "Formular", sans-serif;
 }
-.wrapper .advantages_1920 .advantages__firstline .card__content .card__text p1 {
+.advantages_1920 .advantages__firstline .card__content .card__text p1 {
   font-size: 14px;
   font-style: normal;
   font-family: "Formular", sans-serif;
   line-height: 20px;
 }
-.wrapper .advantages_1920 .advantages__secondline {
+.advantages_1920 .advantages__secondline {
   display: flex;
   justify-content: space-between;
 }
-.wrapper .advantages_1920 .advantages__secondline .card__content {
+.advantages_1920 .advantages__secondline .card__content {
   display: flex;
   padding: 24px;
 }
-.wrapper .advantages_1920 .advantages__secondline .card__content .card__text {
+.advantages_1920 .advantages__secondline .card__content .card__text {
   padding-top: 16px;
   padding-left: 12px;
   display: flex;
   gap: 12px 0;
   flex-direction: column;
 }
-.wrapper .advantages_1920 .advantages__secondline .card__content .card__text h1 {
+.advantages_1920 .advantages__secondline .card__content .card__text h1 {
   font-size: 24px;
   font-weight: 900;
   font-family: "Formular", sans-serif;
 }
-.wrapper .advantages_1920 .advantages__secondline .card__content .card__text p1 {
+.advantages_1920 .advantages__secondline .card__content .card__text p1 {
   font-size: 14px;
   font-style: normal;
   font-family: "Formular", sans-serif;
@@ -359,6 +828,7 @@ html, body {
   .wrapper .advantages_768 .advantages__firstline {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .wrapper .advantages_768 .advantages__firstline .card__content {
     display: flex;
