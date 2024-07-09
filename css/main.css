@@ -853,3 +853,211 @@ body {
     line-height: 20px;
   }
 }
+.garantees__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 24px;
+}
+.garantees__text h1 {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+}
+.garantees__text p1 {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Formular", sans-serif;
+  text-align: center;
+}
+
+.garantees__items {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.garantees__first_column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px 0px;
+}
+
+.garantees__second_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.garantees__item_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px 0;
+  margin-top: -12px;
+  text-align: center;
+}
+.garantees__item_1 p {
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+}
+
+.garantees__item_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px 0;
+  margin-top: -12px;
+}
+.garantees__item_2 p {
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+}
+
+.garantees__item_3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px 0;
+}
+.garantees__item_3 p {
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+  text-align: center;
+}
+
+.garantees__item_4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px 0;
+}
+.garantees__item_4 p {
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+  text-align: center;
+}
+
+.btn__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 36px;
+}
+.btn__container .garantees__btn {
+  background-color: #8B5CF6;
+  color: #F9FAFB;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+  padding: 16px 28px;
+  cursor: pointer;
+}
+
+.garantees__items_1536 {
+  display: none;
+}
+
+.garantees__items_1024 {
+  display: none;
+}
+
+.garantees__items_768 {
+  display: none;
+}
+
+.garantees__text_758 {
+  display: none;
+}
+
+@media (max-width: 1536px) {
+  .garantees__items {
+    display: none;
+  }
+  .garantees__items_1536 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px 0;
+    gap: 24px 24px;
+  }
+  .garantees__text_758 {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .garantees__items_1536 {
+    display: none;
+  }
+  .garantees__items {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+    gap: 24px 0;
+  }
+  .garantees__text_758 {
+    display: none;
+  }
+}
+@media (max-width: 758px) {
+  .garantees__items {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0 0 0;
+    gap: 0 24px;
+  }
+  .garantees__items .garantees__firstline {
+    display: flex;
+    flex-direction: column;
+  }
+  .garantees__items .garantees__firstline .garantees__item_1 {
+    padding: 24px 0;
+  }
+  .garantees__items .garantees__firstline .garantees__item_2 {
+    padding: 24px 0;
+  }
+  .garantees__items .garantees__secondline {
+    display: flex;
+    flex-direction: column;
+  }
+  .garantees__items .garantees__secondline .garantees__item_3 {
+    padding: 24px 0;
+  }
+  .garantees__items .garantees__secondline .garantees__item_4 {
+    padding: 24px 0 0 0;
+  }
+  .garantees__text_758 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .garantees__text_758 h1 {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "Formular", sans-serif;
+  }
+  .garantees__text_758 p1 {
+    font-size: 16px;
+    font-style: normal;
+    font-family: "Formular", sans-serif;
+    text-align: center;
+  }
+  .garantees__text {
+    display: none;
+  }
+}
