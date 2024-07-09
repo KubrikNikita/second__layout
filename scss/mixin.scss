@@ -12,6 +12,20 @@
         family: 'Formular', sans-serif;
     }
 }
+@mixin font__bold_base{
+    font: {
+        size: 16px;
+        weight: bold;
+        family: 'Formular', sans-serif;
+    }
+}
+@mixin font__light_base{
+    font: {
+        size: 16px;
+        weight: lighter;
+        family: 'Formular', sans-serif;
+    }
+}
 @mixin font__black_lg{
     font: {
         size: 18px;
@@ -26,10 +40,17 @@
         family: 'Formular',sans-serif;
     }
 }
+@mixin font__light_xl{
+    font: {
+        size: 20px;
+        weight:lighter;
+        family: 'Formular',sans-serif;
+    }
+}
 @mixin font__lighter_2xl{
     font: {
         size: 24px;
-        style: lighter;
+        weight: lighter;
         family: 'Formular',sans-serif;
     }
 }
@@ -43,7 +64,14 @@
 @mixin font__bold_3xl{
     font: {
         size: 30px;
-        style: bold;
+        weight: bold;
+        family: 'Formular',sans-serif;
+    }
+}
+@mixin font__black_3xl{
+    font: {
+        size: 30px;
+        weight: 900;
         family: 'Formular',sans-serif;
     }
 }
