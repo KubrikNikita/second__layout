@@ -10,22 +10,193 @@ html, body{
     font-family: 'Formular',sans-serif;
 }
 .wrapper{
-    max-width: 1456px;
     margin: 0 auto;
-    
-    padding: 0 60px;
+    padding: 0 60px
 }
-
-
+.header__content_wrapper{
+    padding: 0 60px;
+    background-color: $white;
+}
+.header{
+    width: 100%;
+    .header__img_1028{
+        display: none;
+    }
+    .header__line_top{
+        padding: 24px 0;
+        display: flex;
+        justify-content: space-between;
+        .header__line_top_1{
+            display: flex;
+            align-items: center;
+            h1{
+                font-family: 'Formular';
+                font-weight: 900;
+            }
+        }
+        .header__line_top_2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0 12px;
+            p{
+                @include font__regular_base;
+                text-align: right;
+                line-height: 20px;
+            }
+            .num{
+                @include font__black_4xl;
+                
+            }
+            p1{
+                @include font__lighter_2xl;
+            }
+            .num__wrapper{
+                flex-direction: column;
+                text-align: right;
+            }
+        }
+    }
+    .header__line_bot{
+        padding: 24px 0;
+        display: flex;
+        justify-content: space-between;
+        .header__line_bot_1{
+            display: flex;
+            align-items: center;
+            .nav{
+                display: flex;
+                flex-direction: row;
+                gap: 0 24px;
+                .nav-item{
+                    text-decoration: none;
+                    color: $black;
+                    @include font__bold_base;
+                &:hover{
+                    color: $purple;
+                    }
+                &:focus{
+                    color: $purple;
+                    border-bottom: 2px dashed $purple;
+                }
+                }
+            }
+        }
+        .header__line_bot_2{
+            display: flex;
+            .header__btn{
+                @include font__regular_base;
+                font-weight: bold;
+                color: $white;
+                background-color: $purple;
+                border: none;
+                border-radius: 4px;
+                padding: 10px 28px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.header__line_bot_3{
+    display: none;
+}
+.burger__icon{
+    display: none;
+}
+@media (max-width: 1536px){
+    .header{
+        .header__line_top{
+            .header__line_top_2{
+                .num{
+                    @include font__black_3xl;
+                }
+                p1{
+                    @include font__light_xl;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1024px){
+    .header{
+        .header__line_top{
+            .header__line_top_2{
+                .num{
+                    @include font__black_2xl;
+                }
+                p1{
+                    @include font__light_base;
+                }
+            }
+        }
+        .header__text{
+            display: none;
+        }
+        .header__img{
+            display: none;
+        }
+        .header__img_1028{
+            display: block;
+        }
+        .header__line_top{
+            padding: 24px 0 0 0;
+        }
+        .header__line_bot{
+            padding: 12px 0 0 0;
+        }
+        .header__line_bot_3{
+            display: flex;
+            padding: 16px 32px 0 32px;
+            @include font__regular_sm;
+            padding-bottom: 24px;
+            color: #111827;
+            justify-content: space-between;
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 768px){
+    .header{
+        .header__img_1028{
+            display: none;
+        }
+        .header__line_top{
+            display: flex;
+            align-items: center;
+            .header__line_top_2{
+                .num__wrapper{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: row;
+                }
+            }
+            .num__text{
+                display: none;
+            }
+        }
+        .header__line_bot{
+            display: none;
+        }
+        .header__line_bot_3{
+            display: none;
+        }
+        .burger__icon{
+            display: block;
+            padding-left: 16px;
+        }
+    }
+}
 .noproblem__block{
-    padding: 72px 0px;
     display: flex;
     justify-content: space-between;
     gap: 0 24px;
+    padding-top: 72px;
     .noproblem{
         display: flex;
         flex-direction: column;
         gap: 12px 0;
+        width: calc(50% - 12px);
         .noproblem__text_1920{
             gap: 12px 0;
             display: flex;
@@ -64,23 +235,26 @@ html, body{
 }
 
 .calculator{
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: $white;
     border-radius: 16px;
     padding: 0 130px;
+    width: calc(50% - 12px);
     .calculator__text{
         gap: 12px 0;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding-top: 24px;
-        padding-bottom: 28px;
+        padding-top: 25px;
+        padding-bottom: 25px;
         h1{
             @include font__bold_3xl;
             display: flex;
-            align-items: center;        
+            align-items: center;
+            text-align: center        
         }
         p1{
             @include font__regular_base;
@@ -91,12 +265,21 @@ html, body{
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding-bottom: 24px;
+        padding-bottom: 25px;
+        width: 100%;
+        height: 100%;
         .columns__wrapper{
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-between;
             gap: 0 24px;
+            width: 100%;
+            .first__column{
+                width: calc(50% - 12px);
+            }
+            .second__column{
+                width: calc(50% - 12px);
+            }
         }
         .input-box input{
             @include font__regular_base;
@@ -104,6 +287,7 @@ html, body{
             border: 2px solid $black;
             border-radius: 4px;
             padding-left: 12px;
+            width: 100%;
         }
         .input-box_name input{
             @include font__regular_base;
@@ -113,13 +297,15 @@ html, body{
             border: 2px solid $black;
             border-radius: 4px;
             padding-left:12px;
+            width: 100%;
         }
         .input-box{
-            padding-bottom: 24px;
+            padding-bottom: 25px;
+            width: 100%;
         }
         .input-box_name{
             width: 100%;
-            padding-bottom: 24px;
+            padding-bottom: 25px;
         }
         .form__btn{
             width: 100%;
@@ -142,6 +328,7 @@ html, body{
             display: flex;
             flex-direction: row;
             padding-bottom: 40px;
+            width: 100%;
             .noproblem__text{
                 display: flex;
                 flex-direction: column;
@@ -153,7 +340,8 @@ html, body{
                 display: none;
             }
             .noproblem__block_img_1536{
-                display: block;
+                display: flex;
+                width: 100%;
                 .img{
                     border-radius: 16px;
                     width: 100%;
@@ -182,11 +370,15 @@ html, body{
                 display: none;
             }
         }
+        .calculator{
+            width: 100%;
+        }
     }
 }
 @media (max-width:1024px){
     .noproblem__block{
         .noproblem{
+            display: flex;
             flex-direction: column;
             .noproblem__block_img{
                 display: block;
@@ -197,6 +389,10 @@ html, body{
             }
             .noproblem__block_img_758{
                 display: none;
+            }
+            .noproblem__block_img{
+                display: inline;
+                width: 100%;
             }
             .noproblem__text_1024{
                 display: flex;
@@ -217,6 +413,9 @@ html, body{
                 display: none;
             }
         }
+        .calculator{
+            padding: 0 20px;
+        }
     }
 }
 @media (max-width:768px){
@@ -227,6 +426,7 @@ html, body{
             }
             .noproblem__block_img_758{
                 display: block;
+                width: 100%;
                 .img{
                     border-radius: 16px;
                     width: 100%;
