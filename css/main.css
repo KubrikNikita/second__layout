@@ -462,6 +462,12 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+.calculator .form h2 {
+  padding-top: 36px;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: "Formular", sans-serif;
+}
 
 @media (max-width: 1536px) {
   .noproblem__block {
