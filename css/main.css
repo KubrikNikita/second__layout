@@ -345,23 +345,23 @@ body {
   font-family: "Formular", sans-serif;
   line-height: 28px;
 }
-.noproblem__block .noproblem .noproblem__text_1920 .noproblem__text_1536 {
+.noproblem__block .noproblem .noproblem__text_1536 {
   display: none;
 }
-.noproblem__block .noproblem .noproblem__text_1920 .noproblem__text_1024 {
+.noproblem__block .noproblem .noproblem__text_1024 {
   display: none;
 }
-.noproblem__block .noproblem .noproblem__text_1920 .noproblem__text_758 {
+.noproblem__block .noproblem .noproblem__text_758 {
   display: none;
 }
-.noproblem__block .noproblem .noproblem__text_1920 .noproblem__block_img .img {
+.noproblem__block .noproblem .noproblem__block_img img {
   border-radius: 16px;
   width: 100%;
 }
-.noproblem__block .noproblem .noproblem__text_1920 .noproblem__block_img_1536 {
+.noproblem__block .noproblem .noproblem__block_img_1536 {
   display: none;
 }
-.noproblem__block .noproblem .noproblem__text_1920 .noproblem__block_img_758 {
+.noproblem__block .noproblem .noproblem__block_img_758 {
   display: none;
 }
 

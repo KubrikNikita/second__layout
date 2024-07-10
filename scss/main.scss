@@ -316,35 +316,33 @@ body {
                 @include font__regular_xl;
                 line-height: 28px;
             }
+        }
+        .noproblem__text_1536 {
+            display: none;
+        }
 
-            .noproblem__text_1536 {
-                display: none;
-            }
+        .noproblem__text_1024 {
+            display: none;
+        }
 
-            .noproblem__text_1024 {
-                display: none;
-            }
+        .noproblem__text_758 {
+            display: none;
+        }
 
-            .noproblem__text_758 {
-                display: none;
-            }
-
-            .noproblem__block_img {
-                .img {
-                    border-radius: 16px;
-                    width: 100%;
-                }
-            }
-
-            .noproblem__block_img_1536 {
-                display: none;
-            }
-
-            .noproblem__block_img_758 {
-                display: none;
+        .noproblem__block_img {
+            img {
+                border-radius: 16px;
+                width: 100%;
             }
         }
 
+        .noproblem__block_img_1536 {
+            display: none;
+        }
+
+        .noproblem__block_img_758 {
+            display: none;
+        }
     }
 }
 
@@ -697,6 +695,7 @@ body {
         }
     }
 }
+
 @media (max-width: 1536px) {
     .wrapper {
         .advantages_1920 {
@@ -1387,4 +1386,3 @@ body {
         display: none;
     }
 }
-
