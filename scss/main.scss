@@ -1120,7 +1120,7 @@ body {
         display: flex;
         flex-direction: column;
         padding: 24px 0 0 0;
-        gap: 0 24px;
+        gap: 24px 24px;
 
         .garantees__firstline {
             display: flex;
@@ -1199,6 +1199,7 @@ body {
                 border-radius: 16px;
                 padding: 32px 43px;
                 position: relative;
+                height: 100%;
 
                 .reviews__card_text {
                     @include font__bold_2xl;
@@ -1218,7 +1219,7 @@ body {
                     align-items: center;
                     color: $gray;
                     @include font__lighter_2xl;
-                    padding-top: 25px;
+                    padding-top:25px;
                 }
 
                 .quotes__img {
@@ -1265,14 +1266,14 @@ body {
         .card__container {
             .card__container_withoutarrows {
                 .reviews__card_1 {
-                    width: 310px;
+                    width: calc(50% - 12px);
                     height: 212px;
                     padding: 16px;
 
                     .reviews__card_text_1536 {
                         display: flex;
                         padding-bottom: 10px;
-                        @include font__bold_lg;
+                        @include font__bold_base;
                     }
 
                     .reviews__card_text {
@@ -1285,13 +1286,13 @@ body {
                 }
 
                 .reviews__card_2 {
-                    width: 310px;
+                    width: calc(50% - 12px);
                     height: 212px;
                     padding: 16px;
 
                     .reviews__card_text_1536 {
                         display: flex;
-                        @include font__bold_lg;
+                        @include font__bold_base;
                     }
 
                     .reviews__card_text {
@@ -1325,6 +1326,7 @@ body {
 
                     .reviews__card_text_1536 {
                         padding: 32px 16px 0px 16px;
+                        @include font__bold_lg;
                     }
 
                     .reviews__card_text_768 {
@@ -1373,7 +1375,7 @@ body {
 
                     .reviews__card_text_768 {
                         display: flex;
-                        @include font__bold_lg;
+                        @include font__bold_base;
                     }
                 }
             }
@@ -1386,3 +1388,74 @@ body {
         display: none;
     }
 }
+.questions__wrapper{
+    padding-bottom: 72px;
+    padding-top: 72px;
+}
+.form__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 20px 24px 20px;
+    background-color: $white;
+    border-radius: 16px;
+    .input-boxes__wrapper{
+        display: flex;
+        gap: 24px;
+    }
+    .form{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            @include font__black_3xl;
+            padding-bottom: 32px;
+            text-align: center;
+        }
+        .questions__input-box input{
+            @include font__regular_base;
+            height: 48px;
+            border: 2px solid $black;
+            border-radius: 4px;
+            padding-left: 12px;
+            width: 100%;
+        }
+        .form__firstline{
+            display: flex;
+            flex-direction: column;
+            gap: 24px 24px;
+        }
+        .form__secondline{
+            display: flex;
+            flex-direction: column;
+            gap: 24px 24px;
+        }
+        
+        .questions__input-box_message input{
+            box-sizing: border-box;
+            padding-bottom:100px;
+            margin-top: 24px;
+            width: 100%;
+            height: 150px;
+            @include font__regular_base;
+            border: 2px solid $black;
+            border-radius: 4px;
+            padding-left: 12px;
+        }
+        .questions__input-box_message{
+            width: 100%;
+        }    
+        .questions__btn{
+            width: 100%;
+            background-color: $purple;
+            color: $white;
+            padding: 10px 0;
+            @include font__bold_base;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 24px;
+        }
+    }
+}
+
