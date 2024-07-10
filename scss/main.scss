@@ -402,40 +402,42 @@ body {
         }
 
         .input-box input {
-            @include font__regular_base;
-            height: 48px;
+            @include font__regular_xl;
+            height: 150px;
             border: 2px solid $black;
             border-radius: 4px;
             padding-left: 12px;
             width: 100%;
+            padding-bottom: 100px;
         }
 
         .input-box_name input {
-            @include font__regular_base;
+            @include font__regular_xl;
             width: 100%;
             box-sizing: border-box;
-            height: 48px;
+            height: 150px;
             border: 2px solid $black;
             border-radius: 4px;
             padding-left: 12px;
+            padding-bottom: 100px;
             width: 100%;
         }
 
         .input-box {
-            padding-bottom: 25px;
+            padding-bottom: 50px;
             width: 100%;
         }
 
         .input-box_name {
             width: 100%;
-            padding-bottom: 25px;
+            padding-bottom: 50px;
         }
 
         .form__btn {
             width: 100%;
             background-color: $purple;
             color: $white;
-            padding: 10px 0;
+            padding: 20px 0;
             @include font__bold_base;
             border: none;
             border-radius: 4px;
